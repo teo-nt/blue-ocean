@@ -1,0 +1,6 @@
+@BlueOceanApi_HostAddress = http://localhost:5183
+
+GET {{BlueOceanApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
