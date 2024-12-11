@@ -1,4 +1,7 @@
 
+using BlueOcean.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace BlueOceanApi
 {
     public class Program
@@ -6,6 +9,9 @@ namespace BlueOceanApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<BlueOceanDbContext>(options => options.UseSqlServer(
+                builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Add services to the container.
 

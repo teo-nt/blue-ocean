@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOceanApi", "BlueOceanApi\BlueOceanApi.csproj", "{238E067D-AC86-4F8C-A6AB-E7B19665CB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOcean.Repositories", "BlueOcean.Repositories\BlueOcean.Repositories.csproj", "{2E5D5BFF-6DA1-4123-8BAE-EF865BF6285A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOcean.Data", "BlueOcean.Data\BlueOcean.Data.csproj", "{448D8CF0-A90C-439E-9E19-0BE5E5326C8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueOcean.DTOs", "BlueOcean.DTOs\BlueOcean.DTOs.csproj", "{F86ADCD9-893A-46F3-8118-923BC2EFA4B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{238E067D-AC86-4F8C-A6AB-E7B19665CB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{238E067D-AC86-4F8C-A6AB-E7B19665CB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{238E067D-AC86-4F8C-A6AB-E7B19665CB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5D5BFF-6DA1-4123-8BAE-EF865BF6285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5D5BFF-6DA1-4123-8BAE-EF865BF6285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5D5BFF-6DA1-4123-8BAE-EF865BF6285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5D5BFF-6DA1-4123-8BAE-EF865BF6285A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448D8CF0-A90C-439E-9E19-0BE5E5326C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448D8CF0-A90C-439E-9E19-0BE5E5326C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448D8CF0-A90C-439E-9E19-0BE5E5326C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448D8CF0-A90C-439E-9E19-0BE5E5326C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86ADCD9-893A-46F3-8118-923BC2EFA4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86ADCD9-893A-46F3-8118-923BC2EFA4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86ADCD9-893A-46F3-8118-923BC2EFA4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86ADCD9-893A-46F3-8118-923BC2EFA4B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
