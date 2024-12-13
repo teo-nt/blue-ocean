@@ -9,5 +9,6 @@
         IUserRepository UserRepository { get; }
 
         Task<bool> SaveAsync();
+        Task DisposeAsync();
     }
 }
