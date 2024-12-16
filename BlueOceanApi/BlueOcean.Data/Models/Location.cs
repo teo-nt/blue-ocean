@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace BlueOcean.Data.Models
 {
-    public class Location
+    public class Location : BaseEntity
     {
-        public string Country { get; set; } // maybe enum?!?!?
+        [Required]
+        public string Area { get; set; }
+
+        [Required]
         public string Port { get; set; }
-        public string Wharf { get; set; } // 
+
+        public ICollection <Boat> Boats { get; set; }
     }
 }

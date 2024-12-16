@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlueOcean.Data.Models
+namespace BlueOcean.Data.Enums
 {
-    public class Role: BaseEntity
+    public enum BoatCategory
     {
-        public string RoleName { get; set; }
+        Sailing = 1,
+        Motorized = 2
     }
 }

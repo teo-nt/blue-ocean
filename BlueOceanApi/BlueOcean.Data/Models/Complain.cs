@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BlueOcean.Data.Models
 {
-    public class Complain
+    public class Complain : BaseEntity
     {
-        public string TicketTitle { get; set; }
+        public string Name { get; set; }
         public string Reason { get; set; }
         public string Description { get; set; }
 

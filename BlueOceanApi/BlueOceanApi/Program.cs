@@ -1,5 +1,6 @@
 
 using BlueOcean.Data;
+using BlueOcean.Repositories.Implementations;
 using BlueOcean.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,7 @@ namespace BlueOceanApi
             builder.Services.AddDbContext<BlueOceanDbContext>(options => options.UseSqlServer(
                 builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddScoped<IUnitOfWork, IUnitOfWork>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             // Add services to the container.
 

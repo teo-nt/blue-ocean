@@ -8,11 +8,9 @@ namespace BlueOcean.Repositories.Interfaces
 
         IComplainRepository ComplainRepository { get; }
         ILocationRepository LocationRepository { get; }
-        IRoleRepository RoleRepository { get; }
         ITicketRepository TicketRepository { get; }
         IUserRepository UserRepository { get; }
         IBoatRepository BoatRepository { get; }
-        IBoatCategoryRepository BoatCategoryRepository { get; }
 
         Task DisposeAsync();
     }
