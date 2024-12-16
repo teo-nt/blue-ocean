@@ -18,12 +18,7 @@ namespace BlueOcean.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Ad>()
-                .HasOne(b => b.Boat)
-                .WithOne(a => a.Ad)
-                .HasForeignKey <Ad>(b => b.BoatId)
-                .IsRequired();
+       
 
             modelBuilder.Entity<Boat>()
                 .HasOne(l => l.Location)

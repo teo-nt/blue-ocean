@@ -27,9 +27,5 @@ namespace BlueOcean.Data.Models
 
         public Guid OwnerId { get; set; }
 
-        public virtual Ad Ad { get; set; }
-
-        public Guid AdId { get; set; }
-
     }
 }
