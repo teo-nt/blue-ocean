@@ -10,7 +10,7 @@ namespace BlueOcean.Data.Models
         public string Phone { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
-        public  Role Role { get; set; }
+        public Role Role { get; set; }
 
         public ICollection<Boat> Boats { get; set; }
 

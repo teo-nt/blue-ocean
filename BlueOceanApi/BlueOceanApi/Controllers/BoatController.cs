@@ -1,15 +1,11 @@
 ﻿using AutoMapper;
-using BlueOcean.DTOs;
 using BlueOcean.Repositories.Interfaces;
 using BlueOceanApi.Logic;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization;
+
 
 namespace BlueOceanApi.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")]
+{ 
     public class BoatController : BaseController
     {
         private readonly BoatLogic _boatLogic;
@@ -20,7 +16,7 @@ namespace BlueOceanApi.Controllers
         }
 
 
-        [HttpGet("GetBoats")]
+        [HttpGet()]
         public async Task<IActionResult> GetBoats()
         {
             try
