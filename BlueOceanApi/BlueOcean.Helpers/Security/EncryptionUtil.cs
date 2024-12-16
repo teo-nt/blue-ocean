@@ -1,4 +1,4 @@
-﻿namespace BlueOcean.Helpers
+﻿namespace BlueOcean.Helpers.Security
 {
     public static class EncryptionUtil
     {

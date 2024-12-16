@@ -1,6 +1,6 @@
 ﻿using BlueOcean.Data;
 using BlueOcean.Data.Models;
-using BlueOcean.Helpers;
+using BlueOcean.Helpers.Security;
 using BlueOcean.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
