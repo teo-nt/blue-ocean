@@ -6,6 +6,6 @@ namespace BlueOcean.Repositories.Interfaces
 {
     public interface IBoatRepository : IBaseRepository<Boat>
     {
-        
+        Task<List<Boat>> GetAllBoatsAsync();
     }
 }

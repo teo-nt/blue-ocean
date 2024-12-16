@@ -1,5 +1,6 @@
 
 using BlueOcean.Data;
+using BlueOcean.Helpers.Mapper;
 using BlueOcean.Repositories.Implementations;
 using BlueOcean.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace BlueOceanApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(typeof(BaseProfile));
 
             var app = builder.Build();
 
