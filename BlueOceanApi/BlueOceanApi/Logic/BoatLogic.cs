@@ -18,9 +18,9 @@ namespace BlueOceanApi.Logic
             _mapper = mapper;
         }
 
-        public async Task<MainResponseDTO> GetBoats()
+        public async Task<MainResponseDTO<List<BoatDTO>>> GetBoats()
         {
-            var response = new MainResponseDTO();
+            var response = new MainResponseDTO<List<BoatDTO>>();
 
             try
             {
@@ -43,9 +43,9 @@ namespace BlueOceanApi.Logic
 
         }
 
-        public async Task<MainResponseDTO> GetBoat(string boatId)
+        public async Task<MainResponseDTO<List<BoatDTO>>> GetBoat(string boatId)
         {
-            var response = new MainResponseDTO();
+            var response = new MainResponseDTO<List<BoatDTO>>();
 
             try
             {

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BlueOcean.DTOs;
 using BlueOcean.Repositories.Interfaces;
 using BlueOceanApi.Logic;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +18,7 @@ namespace BlueOceanApi.Controllers
 
 
         [HttpGet()]
-        public async Task<IActionResult> GetBoats()
+        public async Task<ActionResult<MainResponseDTO<List<BoatDTO>>>> GetBoats()
         {
             try
             {

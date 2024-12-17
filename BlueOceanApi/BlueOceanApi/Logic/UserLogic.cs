@@ -16,9 +16,9 @@ namespace BlueOceanApi.Logic
             _configuration = configuration;
         }
 
-        public async Task<MainResponseDTO> Login(LoginRequestDTO loginRequest)
+        public async Task<MainResponseDTO<LoginResponseDTO>> Login(LoginRequestDTO loginRequest)
         {
-            var response = new MainResponseDTO();
+            var response = new MainResponseDTO<LoginResponseDTO>();
 
             try
             {

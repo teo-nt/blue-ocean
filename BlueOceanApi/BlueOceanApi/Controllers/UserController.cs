@@ -1,4 +1,5 @@
-﻿using BlueOcean.DTOs.User;
+﻿using BlueOcean.DTOs;
+using BlueOcean.DTOs.User;
 using BlueOcean.Repositories.Interfaces;
 using BlueOceanApi.Logic;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +16,7 @@ namespace BlueOceanApi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequestDTO dto)
+        public async Task<ActionResult<MainResponseDTO<LoginResponseDTO>>> Login(LoginRequestDTO dto)
         {
             try
             {
