@@ -23,16 +23,11 @@ namespace BlueOcean.Repositories.Implementations
         public ITicketRepository TicketRepository => _ticketRepository ??= new TicketRepository(_context);
         public IUserRepository UserRepository => _userRepository ??= new UserRepository(_context);
         public IBoatRepository BoatRepository => _boatRepository ??= new BoatRepository(_context);
-        public async Task DisposeAsync()
-        {
-            await _context.DisposeAsync();
-        }
 
         public async Task<bool> SaveAsync()
         {
             return await _context.SaveChangesAsync() > 0;
         }
-
 
     }
 }

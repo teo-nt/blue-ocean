@@ -13,14 +13,10 @@ namespace BlueOcean.Data
         public virtual DbSet<Location> Locations { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
 
-
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
        
-
-
             modelBuilder.Entity<Boat>()
                 .HasOne(l => l.Location)
                 .WithMany(b => b.Boats)

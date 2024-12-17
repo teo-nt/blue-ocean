@@ -11,7 +11,5 @@ namespace BlueOcean.Repositories.Interfaces
         ITicketRepository TicketRepository { get; }
         IUserRepository UserRepository { get; }
         IBoatRepository BoatRepository { get; }
-
-        Task DisposeAsync();
     }
 }
