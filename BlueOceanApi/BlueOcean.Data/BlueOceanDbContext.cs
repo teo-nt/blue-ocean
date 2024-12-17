@@ -20,6 +20,7 @@ namespace BlueOcean.Data
             base.OnModelCreating(modelBuilder);
        
 
+
             modelBuilder.Entity<Boat>()
                 .HasOne(l => l.Location)
                 .WithMany(b => b.Boats)

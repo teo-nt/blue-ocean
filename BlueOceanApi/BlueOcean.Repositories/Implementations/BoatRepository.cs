@@ -20,6 +20,17 @@ namespace BlueOcean.Repositories.Implementations
                 .ToListAsync();
         }
 
+        public async Task<List<Boat>> GetBoatAsync(string boatId)
+        {
+            return await _context.Boats
+                .Include(b => b.Location)
+                .Include(b => b.Owner)
+                .Where(b => b.Id == boatId)
+                .ToListAsync();
+        }
+
+
+
 
     }
 

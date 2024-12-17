@@ -21,11 +21,11 @@ namespace BlueOcean.Data.Models
 
         public virtual Location Location { get; set; }
 
-        public Guid LocationId { get; set; }
+        public string LocationId { get; set; }
 
         public virtual User Owner { get; set; }
 
-        public Guid OwnerId { get; set; }
+        public string OwnerId { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@ namespace BlueOcean.Data.Models
     {
         public virtual Boat Boat { get; set; }
 
-        public Guid BoatId { get; set; }
+        public string BoatId { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(18, 2)")]

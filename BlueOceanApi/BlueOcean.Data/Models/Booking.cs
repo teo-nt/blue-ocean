@@ -8,7 +8,7 @@ namespace BlueOcean.Data.Models
 {
     public class Booking : BaseEntity
     {
-        public Guid? UserId { get; set; }
+        public string? UserId { get; set; }
         public User? User { get; set; }
 
         public DateTime StartDate { get; set; }
@@ -16,6 +16,6 @@ namespace BlueOcean.Data.Models
         public DateTime EndDate { get; set; }
         public Ad? Ad { get; set; }
 
-        public Guid AdId { get; set; }
+        public string AdId { get; set; }
     }
 }

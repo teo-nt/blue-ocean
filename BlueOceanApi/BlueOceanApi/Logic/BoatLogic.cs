@@ -42,7 +42,27 @@ namespace BlueOceanApi.Logic
             return response;
 
         }
-    }
 
-   
+        public async Task<MainResponseDTO> GetBoat(string boatId)
+        {
+            var response = new MainResponseDTO();
+
+            try
+            {
+                var boat = await _unitOfWork.BoatRepository.GetBoatAsync(boatId);
+
+                var responseModel = _mapper.Map<List<BoatDTO>>(boat);
+
+                response.Result = responseModel;
+            }
+            catch (Exception ex)
+            {
+                response.Error = $"An error occurred: {ex.Message}";
+            }
+
+            return response;
+        }
+
+
+    }
 }
